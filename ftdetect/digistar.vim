@@ -1,1 +1,1 @@
-/home/fwarcs/.vim/ftdetect/digistar.vim
+au BufRead,BufNewFile *.ds set filetype=digistar
