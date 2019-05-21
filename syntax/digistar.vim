@@ -1,0 +1,1 @@
+/home/fwarcs/.vim/syntax/digistar.vim
