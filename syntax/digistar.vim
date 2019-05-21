@@ -15,6 +15,19 @@ syn match dsComment "[#;].*$" contains=dsTodo
 syn match dsTimestamp '^\d\+[:]\d\+'
 syn match dsTimestamp '^[+]\d\+[.]*\d*'
 
+" STRINGS
+syn region dsString start='"' end='"'
+syn region dsString start='\'' end='\''
+
+" NUMBERS
+syn match dsNumber '\(\S.*\)\@<=\d\+'
+syn match dsNumber '\(\S.*\)\@<=[-+]\d\+'
+syn match dsNumber '\(\S.*\)\@<=[-+]\d\+\.\d*'
+syn match dsNumber '\(\S.*\)\@<=[-+]\=\d[[:digit:]]*[eE][\-+]\=\d\+'
+syn match dsNumber '\(\S.*\)\@<=\d[[:digit:]]*[eE][\-+]\=\d\+'
+syn match dsNumber '\(\S.*\)\@<=[-+]\=\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
+syn match dsNumber '\(\S.*\)\@<=\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
+
 " CLASSES
 " Advanced Classes
 syn keyword dsClasses controlInfoClass modelExtClass modelLoaderClass scriptInfoClass topologyClass
@@ -629,6 +642,8 @@ let b:current_syntax = "digistar"
 hi def link dsComment			Comment
 hi def link dsTodo				Todo
 hi def link dsTimestamp		Special
+hi def link dsString			String
+hi def link dsNumber			Number
 hi def link dsClasses			Function
 hi def link dsAttributes	Type
 hi def link dsObjects			Keyword
