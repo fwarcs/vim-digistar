@@ -18,19 +18,26 @@ syn match dsTimestamp '^[+]\d\+[.]*\d*'
 " CLASSES
 " Advanced Classes
 syn keyword dsClasses controlInfoClass modelExtClass modelLoaderClass scriptInfoClass topologyClass
+
 " Controllers
 syn keyword dsClasses connectorClass navigationClass orbiterClass pathClass
+
 " Composition Layers
 syn keyword dsClasses compositionClass compositionLayerClass domeVideoClass domeAudioClass
+
 " Device Classes
 syn keyword dsClasses buttonClass dialboxClass joystickClass kinectSensorClass kinectUserClass
 syn keyword dsClasses menuItemClass xBoxClass
+
 " Seat Button Classes
 syn keyword dsClasses seatClass seatButtonClass seatTallyClass seatBarGraphClass seatGridClass
+
 " Projection Classes
 syn keyword dsClasses projectorLoaderClass projectorClass projectorsClass surfaceClass
+
 " Scenes
 syn keyword dsClasses sceneClass drawModeClass
+
 " Scene Object Classes
 syn keyword dsClasses asteroidClass astroImageClass atmosphereClass auroraClass cloudClass
 syn keyword dsClasses cometClass daylightSolidModelClass dotClass dotCloudClass dotModelClass
@@ -38,21 +45,27 @@ syn keyword dsClasses duModelClass emptyClass galaxyClass kmlClass lightClass
 syn keyword dsClasses lineModelClass meteorShowerClass particleClass planetClass solidModelClass
 syn keyword dsClasses starClass sunClass textClass text2Class trailClass
 syn keyword dsClasses tychoStarClass volumeClass
+
 " Statistics Classes
 syn keyword dsClasses gpStatsClass hostStatsClass localPluginStatsClass pluginStatsClass
 syn keyword dsClasses systemStatsClass
+
 " System Architecture Classes
 syn keyword dsClasses cameraClass gpClass hostClass localPluginClass pluginClass
 syn keyword dsClasses scriptClass JavaScriptClass showClass systemClass systemObjectGroupClass
 syn keyword dsClasses theaterClass uiClass
+
 " System Feature Classes
 syn keyword dsClasses audioClass captureClass ephemerisClass stereoClass waypointClass WMPlayerClass
+
 " Texture Resource/Composition Classes
 syn keyword dsClasses textureCompositionClass cityLightsTextureClass imageClass slidesetClass
 syn keyword dsClasses starTextureClass videoClass videoInputClass
+
 " Interface Classes
 syn keyword dsClasses AstroFxClass serialInterfaceClass socketInterfaceClass SyncBoxClass
 syn keyword dsClasses SyncCardClass AutoAlignClass AutoBlendClass
+
 " DMX Classes
 syn keyword dsClasses DmxUniverseClass coveLightDmxClass valueDmxClass
 
@@ -196,6 +209,97 @@ syn keyword dsObjects TritonLabel NereidLabel NaiadLabel ThalassaLabel
 syn keyword dsObjects DespinaLabel GalateaLabel LarisLabel PlutoLabel
 syn keyword dsObjects CharonLabel NixLabel HydraLabel CeresLabel
 syn keyword dsObjects HaumeaLabel ErisLabel DysnomiaLabel MakemakeLabel
+
+" Constellations
+syn keyword dsObjects allStick allArt allBorders constelLabels
+syn keyword dsObjects andStick andArt andBorder andLabel
+syn keyword dsObjects antStick antArt antBorder antLabel
+syn keyword dsObjects apsStick apsArt apsBorder apsLabel
+syn keyword dsObjects aqrStick aqrArt aqrBorder aqrLabel
+syn keyword dsObjects aqlStick aqlArt aqlBorder aqlLabel
+syn keyword dsObjects araStick araArt araBorder araLabel
+syn keyword dsObjects ariStick ariArt ariBorder ariLabel
+syn keyword dsObjects aurStick aurArt aurBorder aurLabel
+syn keyword dsObjects booStick booArt booBorder booLabel
+syn keyword dsObjects caeStick caeArt caeBorder caeLabel
+syn keyword dsObjects camStick camArt camBorder camLabel
+syn keyword dsObjects cncStick cncArt cncBorder cncLabel
+syn keyword dsObjects cvnStick cvnArt cvnBorder cvnLabel
+syn keyword dsObjects cmaStick cmaArt cmaBorder cmaLabel
+syn keyword dsObjects cmiStick cmiArt cmiBorder cmiLabel
+syn keyword dsObjects capStick capArt capBorder capLabel
+syn keyword dsObjects carStick carArt carBorder carLabel
+syn keyword dsObjects casStick casArt casBorder casLabel
+syn keyword dsObjects cenStick cenArt cenBorder cenLabel
+syn keyword dsObjects cepStick cepArt cepBorder cepLabel
+syn keyword dsObjects cetStick cetArt cetBorder cetLabel
+syn keyword dsObjects chaStick chaArt chaBorder chaLabel
+syn keyword dsObjects cirStick cirArt cirBorder cirLabel
+syn keyword dsObjects colStick colArt colBorder colLabel
+syn keyword dsObjects comStick comArt comBorder comLabel
+syn keyword dsObjects craStick craArt craBorder craLabel
+syn keyword dsObjects crbStick crbArt crbBorder crbLabel
+syn keyword dsObjects crvStick crvArt crvBorder crvLabel
+syn keyword dsObjects crtStick crtArt crtBorder crtLabel
+syn keyword dsObjects cruStick cruArt cruBorder cruLabel
+syn keyword dsObjects cygStick cygArt cygBorder cygLabel
+syn keyword dsObjects delStick delArt delBorder delLabel
+syn keyword dsObjects dorStick dorArt dorBorder dorLabel
+syn keyword dsObjects draStick draArt draBorder draLabel
+syn keyword dsObjects equStick equArt equBorder equLabel
+syn keyword dsObjects eriStick eriArt eriBorder eriLabel
+syn keyword dsObjects forStick forArt forBorder forLabel
+syn keyword dsObjects gemStick gemArt gemBorder gemLabel
+syn keyword dsObjects gruStick gruArt gruBorder gruLabel
+syn keyword dsObjects herStick herArt herBorder herLabel
+syn keyword dsObjects horStick horArt horBorder horLabel
+syn keyword dsObjects hyaStick hyaArt hyaBorder hyaLabel
+syn keyword dsObjects hyiStick hyiArt hyiBorder hyiLabel
+syn keyword dsObjects indStick indArt indBorder indLabel
+syn keyword dsObjects lacStick lacArt lacBorder lacLabel
+syn keyword dsObjects leoStick leoArt leoBorder leoLabel
+syn keyword dsObjects lmiStick lmiArt lmiBorder lmiLabel
+syn keyword dsObjects lepStick lepArt lepBorder lepLabel
+syn keyword dsObjects libStick libArt libBorder libLabel
+syn keyword dsObjects lupStick lupArt lupBorder lupLabel
+syn keyword dsObjects lynStick lynArt lynBorder lynLabel
+syn keyword dsObjects lyrStick lyrArt lyrBorder lyrLabel
+syn keyword dsObjects menStick menArt menBorder menLabel
+syn keyword dsObjects micStick micArt micBorder micLabel
+syn keyword dsObjects monStick monArt monBorder monLabel
+syn keyword dsObjects musStick musArt musBorder musLabel
+syn keyword dsObjects norStick norArt norBorder norLabel
+syn keyword dsObjects octStick octArt octBorder octLabel
+syn keyword dsObjects ophStick ophArt ophBorder ophLabel
+syn keyword dsObjects oriStick oriArt oriBorder oriLabel
+syn keyword dsObjects pavStick pavArt pavBorder pavLabel
+syn keyword dsObjects pegStick pegArt pegBorder pegLabel
+syn keyword dsObjects perStick perArt perBorder perLabel
+syn keyword dsObjects pheStick pheArt pheBorder pheLabel
+syn keyword dsObjects picStick picArt picBorder picLabel
+syn keyword dsObjects pscStick pscArt pscBorder pscLabel
+syn keyword dsObjects psaStick psaArt psaBorder psaLabel
+syn keyword dsObjects pupStick pupArt pupBorder pupLabel
+syn keyword dsObjects pyxStick pyxArt pyxBorder pyxLabel
+syn keyword dsObjects retStick retArt retBorder retLabel
+syn keyword dsObjects sgeStick sgeArt sgeBorder sgeLabel
+syn keyword dsObjects sgrStick sgrArt sgrBorder sgrLabel
+syn keyword dsObjects scoStick scoArt scoBorder scoLabel
+syn keyword dsObjects sclStick sclArt sclBorder sclLabel
+syn keyword dsObjects sctStick sctArt sctBorder sctLabel
+syn keyword dsObjects serStick serArt serBorder serLabel
+syn keyword dsObjects sexStick sexArt sexBorder sexLabel
+syn keyword dsObjects tauStick tauArt tauBorder tauLabel
+syn keyword dsObjects telStick telArt telBorder telLabel
+syn keyword dsObjects triStick triArt triBorder triLabel
+syn keyword dsObjects traStick traArt traBorder traLabel
+syn keyword dsObjects tucStick tucArt tucBorder tucLabel
+syn keyword dsObjects umaStick umaArt umaBorder umaLabel
+syn keyword dsObjects umiStick umiArt umiBorder umiLabel
+syn keyword dsObjects velStick velArt velBorder velLabel
+syn keyword dsObjects virStick virArt virBorder virLabel
+syn keyword dsObjects volStick volArt volBorder volLabel
+syn keyword dsObjects vulStick vulArt vulBorder vulLabel
 
 let b:current_syntax = "digistar"
 
