@@ -75,6 +75,7 @@ syn keyword dsObjects sptStick sptArt sptLabel sqrStick sqrArt sqrLabel
 syn keyword dsObjects sprStick sprArt sprLabel strStick strArt strLabel
 syn keyword dsObjects teaStick teaArt teaLabel tspStick tspArt tspLabel
 syn keyword dsObjects wcrStick wcrArt wcrLabel wtrStick wtrArt wtrLabel
+<<<<<<< HEAD
 " Solar System Bodies
 syn keyword dsObjects Mercury MercuryLabel MercuryMarker
 syn keyword dsObjects Venus VenusLabel VenusMarker
@@ -197,6 +198,13 @@ syn keyword dsObjects CharonLabel NixLabel HydraLabel CeresLabel
 syn keyword dsObjects HaumeaLabel ErisLabel DysnomiaLabel MakemakeLabel
 
 	let b:current_syntax = "digistar"
+=======
+
+syn keyword dsObjBodies contained Mercury Venus Earth Moon Mars Phobos Deimos
+syn match dsObjBodies 
+
+let b:current_syntax = "digistar"
+>>>>>>> da439cfa05cda9dd1743e8743346dacaeb0d8788
 
 hi def link dsComment			Comment
 hi def link dsTodo				Todo
@@ -204,3 +212,7 @@ hi def link dsTimestamp		Special
 hi def link dsClasses			Function
 hi def link dsAttributes	Type
 hi def link dsObjects			Keyword
+<<<<<<< HEAD
+=======
+hi def link dsObjects			Keyword
+>>>>>>> da439cfa05cda9dd1743e8743346dacaeb0d8788
